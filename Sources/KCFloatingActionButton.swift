@@ -140,7 +140,7 @@ open class KCFloatingActionButton: UIView {
 
     open var friendlyTap: Bool = true
     
-    open var sticky: Bool = false
+    @IBInspectable open var sticky: Bool = false
     
     /**
      Delegate that can be used to learn more about the behavior of the FAB widget.
