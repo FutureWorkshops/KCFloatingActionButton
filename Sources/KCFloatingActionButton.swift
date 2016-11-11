@@ -130,8 +130,10 @@ open class KCFloatingActionButton: UIView {
     @IBInspectable open var itemShadowColor: UIColor = UIColor.black
 
     /**
-
-    */
+        Main button default shadow color.
+     */
+    @IBInspectable open var shadowColor: UIColor = UIColor.black
+    
     open var closed: Bool = true
 
     open var openAnimationType: KCFABOpenAnimationType = .pop
