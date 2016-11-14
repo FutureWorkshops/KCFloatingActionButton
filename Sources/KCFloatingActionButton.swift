@@ -134,6 +134,11 @@ open class KCFloatingActionButton: UIView {
      */
     @IBInspectable open var shadowColor: UIColor = UIColor.black
     
+    /**
+     Show/hide shadow on the main button
+     */
+    @IBInspectable open var showShadow: Bool = true
+    
     open var closed: Bool = true
 
     open var openAnimationType: KCFABOpenAnimationType = .pop
@@ -246,7 +251,10 @@ open class KCFloatingActionButton: UIView {
         } else {
             setButtonImage()
         }
-        setShadow()
+        
+        if self.showShadow {
+            setShadow()
+        }
     }
 
     /**
